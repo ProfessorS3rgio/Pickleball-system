@@ -1,0 +1,29 @@
+{
+  "name": "courtline",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "devices": "node server/index.mjs",
+    "device:simulate": "node server/simulator.mjs",
+    "mqtt:dev": "node server/broker.mjs"
+  },
+  "dependencies": {
+    "@lucide/vue": "^1.61.0",
+    "mqtt": "^5.16.1",
+    "vue": "^3.5.13",
+    "ws": "^8.22.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "aedes": "^1.2.0",
+    "typescript": "~5.9.3",
+    "vite": "^6.3.5",
+    "vitest": "^5.0.5",
+    "vue-tsc": "^3.1.0"
+  }
+}
